@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rafael80 | Fullstack Developer</title>
+<meta name="description" content="Portofolio Fullstack Developer">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Outfit:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<div class="splash" aria-hidden="true">
+  <div class="ico">
+    <span><svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg></span>
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span>
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>
+  </div>
+  <h2>Welcome to my</h2>
+  <h2>Portfolio Website</h2>
+</div>
+
+<nav class="nav" aria-label="Navigasi utama">
+  <a class="logo" href="#home" data-cfg="logo">Rafael.dev</a>
+  <ul>
+    <li><a href="#home" data-s="home">Home</a></li>
+    <li><a href="#about" data-s="about">About</a></li>
+    <li><a href="#portfolio" data-s="portfolio">Portfolio</a></li>
+    <li><a href="#contact" data-s="contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+  <!-- HOME -->
+  <section id="home">
+    <div class="hero">
+      <div>
+        <div class="avail eyebrow"><i></i> Student</div>
+        <h1>
+          <small class="kata">Bismillah</small>
+          Fullstack <span>Developer</span>
+          <small class="kata">Aamiin</small>
+        </h1>
+        <div class="typed" aria-live="off"><span id="typed"></span><b></b></div>
+        <p class="lead" data-cfg="tagline">A Business Information Systems student who builds web and mobile applications from the database to the user interface. Accustomed to working in teams to solve real-world problems, and ready to learn as a developer, both as an intern and as a freelancer</p>
+        <div class="chips" id="heroChips"></div>
+        <div class="hints">↓ explore my work below<br>✓ freelance opportunities &amp; internships</div>
+        <div class="scroll">SCROLL ↓</div>
+      </div>
+      <div class="lan" id="lan" aria-label="Kartu ID, bisa ditarik">
+        <div class="swing" id="swing">
+          <div class="strap"><span>ID CARD</span><span>ID CARD</span></div>
+          <div class="clip"></div>
+          <div class="idcard" id="idcard">
+            <img class="ph" alt="Foto profil" draggable="false" data-photo>
+            <div class="cap"><span data-cfg="shortName">Rafael</span><span>2026</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about">
+      <div>
+        <div class="eyebrow">About me</div>
+        <h2 data-cfg="name">Moh. Rafael Abrari</h2>
+        <p data-cfg="bio">I am a fifth-semester Business Information Systems student at the Malang State Polytechnic, specializing in full-stack web and mobile development. I design databases and UI/UX, build applications using Laravel and PostgreSQL, and am experienced in working on team projects to solve real-world business problems, ranging from digital product marketplaces to outdoor equipment rental systems.</p>
+        <div class="quote">“Building web applications from interface to infrastructure.”</div>
+        <div class="btns">
+          <button class="btn" data-go="projects"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>View Projects</button>
+        </div>
+      </div>
+      <img class="avatar" alt="Foto profil" data-photo-about>
+    </div>
+    <div class="stats">
+      <button class="stat" data-go="projects"><svg class="ic" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg><span class="n" id="nProj">0</span><span class="l">Projects</span><svg class="ic go" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></button>
+      <button class="stat" data-go="certs"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="m9 13-2 8 5-3 5 3-2-8"/></svg><span class="n" id="nCert">0</span><span class="l">Certificates</span><svg class="ic go" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></button>
+      <button class="stat" data-go="tech"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><span class="n" id="nTech">0</span><span class="l">Tech Stack</span><svg class="ic go" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></button>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="head">
+      <h2>Portfolio Showcase</h2>
+      <p>Explore my journey through projects, technical, and tools expertise.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-projects" data-tab="projects" aria-selected="true">Projects</button>
+      <!-- <button role="tab" id="tab-certs" data-tab="certs" aria-selected="false">Certificates</button> -->
+      <button role="tab" id="tab-tech" data-tab="tech" aria-selected="false">Tech Stack</button>
+      <button role="tab" id="tab-tools" data-tab="tools" aria-selected="false">Tools</button>
+    </div>
+    <div id="panel"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="head">
+      <h2>Contact Me</h2>
+      <p>Open to internships and freelance opportunities. Please contact me using the information below, and let's connect.</p>
+    </div>
+    <div class="panel contact-one">
+      <div class="soc" id="soc"></div>
+    </div>
+  </section>
+  <div class="foot">© 2026 <span data-cfg="logo">Rafael.dev</span> · Built with HTML, CSS &amp; JS</div>
+</main>
+
+<div class="detail" id="detail" hidden></div>
+<script src="script.js"></script>
+</body>
+</html>
