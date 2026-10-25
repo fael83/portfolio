@@ -66,9 +66,6 @@ $$("[data-cfg]").forEach(el => { const v = CONFIG[el.dataset.cfg]; if (v) el.tex
 $$("[data-photo]").forEach(img => { img.src = CONFIG.photo || silhouette; });
 $$("[data-photo-about]").forEach(img => { img.src = CONFIG.photoAbout || CONFIG.photo || silhouette; });
 $("#heroChips").innerHTML = CONFIG.heroChips.map(c => `<span class="chip">${esc(c)}</span>`).join("");
-$("#nProj").textContent = CONFIG.projects.length;
-// $("#nCert").textContent = CONFIG.certificates.length;   // sertifikat
-$("#nTech").textContent = CONFIG.tech.length;
 
 const socIcons = {
   in: '<path d="M6 9v10M6 5.5v.01M10 19V9m0 4c0-2 1.5-4 4-4s4 1.5 4 4v6"/>',
